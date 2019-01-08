@@ -18,7 +18,7 @@ import org.springframework.core.env.Environment
 
 @Configuration
 @EnableAspectJAutoProxy
-@ComponentScan("org.shop.bpp")
+@ComponentScan("org.shop")
 @PropertySource(value = "props.properties")
 class BeansConfiguration {
     private static final long FIRST_SELLER_ID = 1

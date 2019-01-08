@@ -12,11 +12,11 @@
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n</pattern>
         </encoder>
     </appender>
-    <logger name="main" level="DEBUG" additivity="false">
+    <logger name="main" level="INFO" additivity="false">
         <appender-ref ref="FILE" />
     </logger>
 
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="FILE" />
     </root>
 </configuration>

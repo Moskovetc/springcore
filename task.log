@@ -1,43 +1,8 @@
-02:04:26.762 [main] DEBUG o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6aaa5eb0
-02:04:26.790 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-02:04:26.932 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/home/leonid/workspace/epam/springcore_gradle/out/production/classes/org/shop/bpp/InjectRandomIntAnnotationBeanPostProcessor.class]
-02:04:27.191 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-02:04:27.196 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-02:04:27.205 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-02:04:27.206 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-02:04:27.211 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
-02:04:27.318 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'injectRandomIntAnnotationBeanPostProcessor'
-02:04:27.344 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'beansConfiguration'
-02:04:27.880 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'classForRandomInt'
-02:04:27.954 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataInitializer'
-02:04:27.964 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sellerInitializer'
-02:04:27.971 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sellerService'
-02:04:27.980 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sellerMapRepository'
-02:04:27.994 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sellerNames'
-02:04:28.143 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'productInitializer'
-02:04:28.150 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'productService'
-02:04:28.150 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'productMapRepository'
-02:04:28.155 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'productService' via factory method to bean named 'productMapRepository'
-02:04:28.159 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'productInitializer' via factory method to bean named 'productService'
-02:04:28.165 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'proposalInitializer'
-02:04:28.172 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'proposalService'
-02:04:28.173 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'proposalMapRepository'
-02:04:28.179 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'proposalService' via factory method to bean named 'proposalMapRepository'
-02:04:28.188 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userInitializer'
-02:04:28.189 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userService'
-02:04:28.195 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userRepository'
-02:04:28.197 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userRepositoryFactory'
-02:04:28.201 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userRepository' via factory method to bean named 'userRepositoryFactory'
-02:04:28.204 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userInitializer' via factory method to bean named 'userService'
-02:04:28.214 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'orderRepository'
-02:04:28.232 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'intitialSequence' in PropertySource 'class path resource [props.properties]' with value of type String
-02:04:28.252 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'itemMapRepository'
-02:04:28.258 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'itemService'
-02:04:28.259 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'itemService' via factory method to bean named 'itemMapRepository'
-02:04:28.262 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'orderService'
-02:04:28.322 [main] INFO  o.s.ShopLauncher - [Seller [id=1, name=Amazon], Seller [id=2, name=Samsung]]
-02:04:28.323 [main] INFO  o.s.ShopLauncher - [Product [id=1, name=Samsung Galaxy Tab, description=10.1-Inch, 16GB, Wi-Fi], Product [id=2, name=Kindle Fire, description=Wi-Fi, Full Color 7, Multi-Touch Display], Product [id=3, name=Kindle Touch, description=Wi-Fi, 6 E Ink Display], Product [id=4, name=Samsung S5830L Galaxy Ace, description=Samsung S5830L Galaxy Ace]]
-02:04:28.323 [main] INFO  o.s.ShopLauncher - [User [id=1, username=Ivan Ivanov], User [id=2, username=Petr Petrov]]
-02:04:28.327 [main] INFO  o.s.ShopLauncher - [Proposal [id=2, product=Product [id=1, name=Samsung Galaxy Tab, description=10.1-Inch, 16GB, Wi-Fi], seller=Seller [id=2, name=Samsung], price=500.0, state=State [id=1, name=null]], Proposal [id=3, product=Product [id=2, name=Kindle Fire, description=Wi-Fi, Full Color 7, Multi-Touch Display], seller=Seller [id=1, name=Amazon], price=199.0, state=State [id=1, name=null]], Proposal [id=4, product=Product [id=3, name=Kindle Touch, description=Wi-Fi, 6 E Ink Display], seller=Seller [id=1, name=Amazon], price=99.0, state=State [id=1, name=null]], Proposal [id=1, product=Product [id=4, name=Samsung S5830L Galaxy Ace, description=Samsung S5830L Galaxy Ace], seller=Seller [id=2, name=Samsung], price=250.0, state=State [id=1, name=null]]]
-02:04:28.332 [main] INFO  o.s.ShopLauncher - [Order [id=2, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 02:04:28 SAMT 2019], Order [id=3, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 02:04:28 SAMT 2019], Order [id=4, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 02:04:28 SAMT 2019], Order [id=5, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 02:04:28 SAMT 2019], Order [id=6, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 02:04:28 SAMT 2019], Order [id=7, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 02:04:28 SAMT 2019], Order [id=8, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 02:04:28 SAMT 2019], Order [id=9, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 02:04:28 SAMT 2019]]
-02:04:28.333 [main] INFO  o.s.ShopLauncher - ClassForRandomInt{randomInt=7}
+02:27:05.066 [main] INFO  o.s.l.LoggingAspect - Before invoking getName() method
+02:27:05.089 [main] INFO  o.s.l.LoggingAspect - After invoking getName() method. Return value=null
+02:27:05.193 [main] INFO  o.s.ShopLauncher - [Seller [id=1, name=Amazon], Seller [id=2, name=Samsung]]
+02:27:05.194 [main] INFO  o.s.ShopLauncher - [Product [id=1, name=Samsung Galaxy Tab, description=10.1-Inch, 16GB, Wi-Fi], Product [id=2, name=Kindle Fire, description=Wi-Fi, Full Color 7, Multi-Touch Display], Product [id=3, name=Kindle Touch, description=Wi-Fi, 6 E Ink Display], Product [id=4, name=Samsung S5830L Galaxy Ace, description=Samsung S5830L Galaxy Ace]]
+02:27:05.194 [main] INFO  o.s.ShopLauncher - [User [id=1, username=Ivan Ivanov], User [id=2, username=Petr Petrov]]
+02:27:05.196 [main] INFO  o.s.ShopLauncher - [Proposal [id=2, product=Product [id=1, name=Samsung Galaxy Tab, description=10.1-Inch, 16GB, Wi-Fi], seller=Seller [id=2, name=Samsung], price=500.0, state=State [id=1, name=null]], Proposal [id=3, product=Product [id=2, name=Kindle Fire, description=Wi-Fi, Full Color 7, Multi-Touch Display], seller=Seller [id=1, name=Amazon], price=199.0, state=State [id=1, name=null]], Proposal [id=4, product=Product [id=3, name=Kindle Touch, description=Wi-Fi, 6 E Ink Display], seller=Seller [id=1, name=Amazon], price=99.0, state=State [id=1, name=null]], Proposal [id=1, product=Product [id=4, name=Samsung S5830L Galaxy Ace, description=Samsung S5830L Galaxy Ace], seller=Seller [id=2, name=Samsung], price=250.0, state=State [id=1, name=null]]]
+02:27:05.202 [main] INFO  o.s.ShopLauncher - [Order [id=2, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 02:27:05 SAMT 2019], Order [id=3, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 02:27:05 SAMT 2019], Order [id=4, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 02:27:05 SAMT 2019], Order [id=5, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 02:27:05 SAMT 2019], Order [id=6, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 02:27:05 SAMT 2019], Order [id=7, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 02:27:05 SAMT 2019], Order [id=8, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 02:27:05 SAMT 2019], Order [id=9, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 02:27:05 SAMT 2019]]
+02:27:05.203 [main] INFO  o.s.ShopLauncher - ClassForRandomInt{randomInt=16}
