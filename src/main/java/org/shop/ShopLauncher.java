@@ -1,11 +1,15 @@
 package org.shop;
 
 
+import configuration.BeansConfiguration;
 import org.shop.api.*;
-import org.shop.configuration.ApplicationConfiguration;
 import org.shop.data.*;
+import org.shop.repository.UserRepository;
+import org.shop.repository.factory.UserRepositoryFactory;
+import org.shop.repository.map.AbstractMapRepository;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericGroovyApplicationContext;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +18,7 @@ import java.util.List;
  * The ShopLauncher class.
  */
 public class ShopLauncher {
+    private static final String CONFIGURATION = "file:src/main/groovy/configuration/beans.groovy";
 
     /**
      * The main method.
@@ -21,13 +26,16 @@ public class ShopLauncher {
      * @param args the arguments
      */
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
+//        ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
+        ApplicationContext context =
+                new AnnotationConfigApplicationContext(BeansConfiguration.class);
 
         List<Seller> sellers = getSellers(context);
         List<Product> products = getProducts(context);
         List<User> users = getUsers(context);
         List<Proposal> proposals = getProposals(context, products);
         List<Order> orders = getOrders(context, users, proposals);
+
         System.out.println(sellers.toString());
         System.out.println(products.toString());
         System.out.println(users.toString());
