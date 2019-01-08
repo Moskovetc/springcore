@@ -2,7 +2,7 @@ package org.shop.data;
 
 /**
  * Entity of <code>Item</code> class represents the order item.
- * 
+ *
  * @author Dzmitry_Naskou
  * @see Order
  */
@@ -11,11 +11,11 @@ public class Item implements Entity {
     private static final long serialVersionUID = 2715339873182595898L;
 
     private Long id;
-    
+
     private Order order;
-    
+
     private Product product;
-    
+
     private Double price;
 
     @Override

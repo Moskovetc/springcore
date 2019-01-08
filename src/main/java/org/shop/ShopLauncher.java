@@ -39,6 +39,7 @@ public class ShopLauncher {
         LOG.info(users.toString());
         LOG.info(proposals.toString());
         LOG.info(orders.toString());
+        LOG.info(context.getBean(ClassForRandomInt.class).toString());
 
     }
 
