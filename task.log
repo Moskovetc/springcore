@@ -1,0 +1,39 @@
+01:04:57.231 [main] DEBUG o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6aaa5eb0
+01:04:57.260 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+01:04:57.617 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+01:04:57.620 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+01:04:57.625 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+01:04:57.626 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+01:04:57.632 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+01:04:57.739 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'beansConfiguration'
+01:04:58.305 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataInitializer'
+01:04:58.373 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sellerInitializer'
+01:04:58.380 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sellerService'
+01:04:58.390 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sellerMapRepository'
+01:04:58.405 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'sellerNames'
+01:04:58.582 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'productInitializer'
+01:04:58.589 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'productService'
+01:04:58.590 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'productMapRepository'
+01:04:58.596 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'productService' via factory method to bean named 'productMapRepository'
+01:04:58.601 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'productInitializer' via factory method to bean named 'productService'
+01:04:58.606 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'proposalInitializer'
+01:04:58.613 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'proposalService'
+01:04:58.614 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'proposalMapRepository'
+01:04:58.620 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'proposalService' via factory method to bean named 'proposalMapRepository'
+01:04:58.630 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userInitializer'
+01:04:58.632 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userService'
+01:04:58.638 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userRepository'
+01:04:58.640 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'userRepositoryFactory'
+01:04:58.644 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userRepository' via factory method to bean named 'userRepositoryFactory'
+01:04:58.649 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'userInitializer' via factory method to bean named 'userService'
+01:04:58.660 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'orderRepository'
+01:04:58.688 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'intitialSequence' in PropertySource 'class path resource [props.properties]' with value of type String
+01:04:58.723 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'itemMapRepository'
+01:04:58.727 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'itemService'
+01:04:58.728 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'itemService' via factory method to bean named 'itemMapRepository'
+01:04:58.734 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'orderService'
+01:04:58.799 [main] INFO  o.s.ShopLauncher - [Seller [id=1, name=Amazon], Seller [id=2, name=Samsung]]
+01:04:58.800 [main] INFO  o.s.ShopLauncher - [Product [id=1, name=Samsung Galaxy Tab, description=10.1-Inch, 16GB, Wi-Fi], Product [id=2, name=Kindle Fire, description=Wi-Fi, Full Color 7, Multi-Touch Display], Product [id=3, name=Kindle Touch, description=Wi-Fi, 6 E Ink Display], Product [id=4, name=Samsung S5830L Galaxy Ace, description=Samsung S5830L Galaxy Ace]]
+01:04:58.800 [main] INFO  o.s.ShopLauncher - [User [id=1, username=Ivan Ivanov], User [id=2, username=Petr Petrov]]
+01:04:58.804 [main] INFO  o.s.ShopLauncher - [Proposal [id=2, product=Product [id=1, name=Samsung Galaxy Tab, description=10.1-Inch, 16GB, Wi-Fi], seller=Seller [id=2, name=Samsung], price=500.0, state=State [id=1, name=null]], Proposal [id=3, product=Product [id=2, name=Kindle Fire, description=Wi-Fi, Full Color 7, Multi-Touch Display], seller=Seller [id=1, name=Amazon], price=199.0, state=State [id=1, name=null]], Proposal [id=4, product=Product [id=3, name=Kindle Touch, description=Wi-Fi, 6 E Ink Display], seller=Seller [id=1, name=Amazon], price=99.0, state=State [id=1, name=null]], Proposal [id=1, product=Product [id=4, name=Samsung S5830L Galaxy Ace, description=Samsung S5830L Galaxy Ace], seller=Seller [id=2, name=Samsung], price=250.0, state=State [id=1, name=null]]]
+01:04:58.810 [main] INFO  o.s.ShopLauncher - [Order [id=2, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 01:04:58 SAMT 2019], Order [id=3, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 01:04:58 SAMT 2019], Order [id=4, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 01:04:58 SAMT 2019], Order [id=5, user=User [id=1, username=Ivan Ivanov], createdDate=Wed Jan 09 01:04:58 SAMT 2019], Order [id=6, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 01:04:58 SAMT 2019], Order [id=7, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 01:04:58 SAMT 2019], Order [id=8, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 01:04:58 SAMT 2019], Order [id=9, user=User [id=2, username=Petr Petrov], createdDate=Wed Jan 09 01:04:58 SAMT 2019]]

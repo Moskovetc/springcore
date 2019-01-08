@@ -4,12 +4,10 @@ package org.shop;
 import configuration.BeansConfiguration;
 import org.shop.api.*;
 import org.shop.data.*;
-import org.shop.repository.UserRepository;
-import org.shop.repository.factory.UserRepositoryFactory;
-import org.shop.repository.map.AbstractMapRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.GenericGroovyApplicationContext;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +16,7 @@ import java.util.List;
  * The ShopLauncher class.
  */
 public class ShopLauncher {
-    private static final String CONFIGURATION = "file:src/main/groovy/configuration/beans.groovy";
+    private static final Logger LOG = LoggerFactory.getLogger(ShopLauncher.class);
 
     /**
      * The main method.
@@ -36,11 +34,11 @@ public class ShopLauncher {
         List<Proposal> proposals = getProposals(context, products);
         List<Order> orders = getOrders(context, users, proposals);
 
-        System.out.println(sellers.toString());
-        System.out.println(products.toString());
-        System.out.println(users.toString());
-        System.out.println(proposals.toString());
-        System.out.println(orders.toString());
+        LOG.info(sellers.toString());
+        LOG.info(products.toString());
+        LOG.info(users.toString());
+        LOG.info(proposals.toString());
+        LOG.info(orders.toString());
 
     }
 
