@@ -1,4 +1,4 @@
-package configuration
+
 
 import org.shop.*
 import org.shop.api.ItemService
@@ -25,10 +25,11 @@ properties.load(new ClassPathResource('props.properties').inputStream)
 beans {
     //repository configuration
     userRepositoryFactory(UserRepositoryFactory)
+
     println(userRepositoryFactory)
+//    println(userRepositoryFactory)
     userRepository(UserRepository) {
-        def repository = userRepositoryFactory.createUserRepository()
-        println(repository)
+        userRepositoryFactory.createUserRepository()
     }
 //    orderRepository(OrderRepository) {
 //        OrderMapRepository orderMapRepository = new OrderMapRepository()

@@ -4,10 +4,13 @@ package org.shop;
 import configuration.BeansConfiguration;
 import org.shop.api.*;
 import org.shop.data.*;
+import org.shop.repository.UserRepository;
+import org.shop.repository.factory.UserRepositoryFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericGroovyApplicationContext;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +30,10 @@ public class ShopLauncher {
 //        ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(BeansConfiguration.class);
+//        ApplicationContext context = new GenericGroovyApplicationContext("beans.groovy");
+//        UserRepositoryFactory userRepositoryFactory = context.getBean("userRepositoryFactory", UserRepositoryFactory.class);
+//        UserRepository userRepository = context.getBean("userRepository", UserRepository.class);
+//        System.out.println(userRepository);
 
         List<Seller> sellers = getSellers(context);
         List<Product> products = getProducts(context);
